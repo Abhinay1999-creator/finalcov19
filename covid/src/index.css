@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Muli", sans-serif;
+  }
+
+  .navbar {
+    background-color: #fff !important;
+  }
+  
+  .navbar-brand {
+    font-size: 1.6rem !important;
+    color:black !important;
+    margin-left: 30px;
+  }
+  
+  .navbar a {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin-right: 25px;
+  }
+
+    .navbar-nav{
+     margin-left: 65%;
+    }
+   
+  
+  .menu_active {
+    font-weight: bold;
+    border-bottom: 1px solid #565387;
+    padding: 10px;
+  }
+  
+  .navbar a:hover {
+    color: #000000 !important;
+  }
+  @media (max-width: 967px) {
+    .navbar-brand {
+      font-size: 1.1rem !important;
+    }
+  
+    .menu_active {
+      font-weight: bold;
+      border-bottom: none;
+    }
+  }
+  
+
+.heading{
+  text-shadow: 2px 2px 8px #FF0000;
+}
+
+
+
+.wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper .dynamic-txts{
+  height: 80px;
+  line-height: 80px;
+  overflow: hidden;
+}
+
+.dynamic-txts li{
+  list-style: none;
+  color:#FC6D6D;
+  font-size: 60px;
+  font-weight: bold;
+  position: relative;
+  top: 0;
+  text-shadow: 2px 2px 4px #000000;
+  justify-content: center;
+  animation: slide 6s steps(2) infinite;
+}
+
+@keyframes slide {
+  100%{
+    top: -180px;
+  }
+}
+
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 60px;
+
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-left: 2px solid #FC6D6D;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
+
+
+table {
+  width: 90%;
+  margin:auto;
+  margin-bottom: 15px;
+  border-color: black;
+  border-style:groove;
+}
+
+
+.thead-dark{
+  background-color: rgb(36, 32, 32);
+  font-size:larger;
+  color: whitesmoke;
+}
+
+tbody{
+  font-size:large;
+  border-color: black;
+  border-style: solid; 
+  margin-bottom: 30px;
+}
+
+.table-responsive{
+  max-height: 700px;
+  box-shadow: rgba(0, 0, 0, 25) 0px 25px 50px --12px;
+ margin-bottom: 30px;
+}
+
+tr:hover{
+  background-color:rgb(114, 168, 168);
+}
+
+td,th{
+  position: relative;
+}
+
+.text-center{
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
